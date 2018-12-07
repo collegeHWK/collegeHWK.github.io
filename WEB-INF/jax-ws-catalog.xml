@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://currencyconverter.kowabunga.net/converter.asmx?WSDL" uri="src/conf/xml-resources/web-service-references/converter/wsdl/currencyconverter.kowabunga.net/converter.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConversion/CurrencyConversion?wsdl" uri="wsdl/localhost_8080/CurrencyConversion/CurrencyConversion.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConversion/CurrencyConversion?xsd=1" uri="wsdl/localhost_8080/CurrencyConversion/CurrencyConversion.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CurrencyConversion/MoneyTransfer?wsdl" uri="wsdl/localhost_8080/CurrencyConversion/MoneyTransfer.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConversion/MoneyTransfer?xsd=1" uri="wsdl/localhost_8080/CurrencyConversion/MoneyTransfer.xsd_1.xsd"/>
+</catalog>

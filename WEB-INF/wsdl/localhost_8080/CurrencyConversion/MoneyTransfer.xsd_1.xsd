@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices/">
+
+<xs:element name="amountReceived" type="tns:amountReceived"/>
+
+<xs:element name="amountReceivedResponse" type="tns:amountReceivedResponse"/>
+
+<xs:element name="amountTransferred" type="tns:amountTransferred"/>
+
+<xs:element name="amountTransferredResponse" type="tns:amountTransferredResponse"/>
+
+<xs:element name="currencyConverter" type="tns:currencyConverter"/>
+
+<xs:element name="currencyConverterResponse" type="tns:currencyConverterResponse"/>
+
+<xs:element name="destinationMoney" type="tns:destinationMoney"/>
+
+<xs:element name="destinationMoneyResponse" type="tns:destinationMoneyResponse"/>
+
+<xs:element name="originMoney" type="tns:originMoney"/>
+
+<xs:element name="originMoneyResponse" type="tns:originMoneyResponse"/>
+
+<xs:element name="receiverCurrency" type="tns:receiverCurrency"/>
+
+<xs:element name="receiverCurrencyResponse" type="tns:receiverCurrencyResponse"/>
+
+<xs:element name="receiverName" type="tns:receiverName"/>
+
+<xs:element name="receiverNameResponse" type="tns:receiverNameResponse"/>
+
+<xs:element name="senderCurrency" type="tns:senderCurrency"/>
+
+<xs:element name="senderCurrencyResponse" type="tns:senderCurrencyResponse"/>
+
+<xs:element name="senderName" type="tns:senderName"/>
+
+<xs:element name="senderNameResponse" type="tns:senderNameResponse"/>
+
+<xs:element name="transferFee" type="tns:transferFee"/>
+
+<xs:element name="transferFeeResponse" type="tns:transferFeeResponse"/>
+
+<xs:complexType name="receiverName">
+<xs:sequence>
+<xs:element name="receiverName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiverNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="originMoney">
+<xs:sequence>
+<xs:element name="originMoney" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="originMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="senderCurrency">
+<xs:sequence>
+<xs:element name="senderCurrency" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="senderCurrencyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="senderName">
+<xs:sequence>
+<xs:element name="senderName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="senderNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="currencyConverter">
+<xs:sequence>
+<xs:element name="sendersCurrency" type="xs:string" minOccurs="0"/>
+<xs:element name="receiversCurrency" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="currencyConverterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiverCurrency">
+<xs:sequence>
+<xs:element name="receiverCurrency" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiverCurrencyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="amountTransferred">
+<xs:sequence>
+<xs:element name="amountTransferred" type="xs:double"/>
+<xs:element name="transferFee" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="amountTransferredResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="amountReceived">
+<xs:sequence>
+<xs:element name="amountTransferred" type="xs:double"/>
+<xs:element name="conversionRate" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="amountReceivedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transferFee">
+<xs:sequence>
+<xs:element name="transferFee" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transferFeeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destinationMoney">
+<xs:sequence>
+<xs:element name="destinationMoney" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destinationMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
