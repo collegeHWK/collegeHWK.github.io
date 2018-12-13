@@ -21,6 +21,14 @@
                 }
             });
         </script>
+		<script>
+            $(document).ready(function () {
+                $('video').trigger('pause');
+                var video = document.getElementById('videoPanel');
+                video.currentTime = 0;
+                video.volume = 0.2;
+            });
+		</script>
     </h:head>
     <h:body>
         <h:form>
@@ -33,6 +41,9 @@
                 <div class="trim">
                     <div class="box">
                         <h4>Augmented Reality Personal Computer Building Simulator</h4>
+						<video id="videoPanel" style="width: 40%;" controls>
+                            <source src="PCBR AR - Concept Promotional Video.mp4" type="video/mp4">
+                        </video>
 						<p>ARPCBS (Augmented Reality Personal Computer Building Simulator) is an application developed for the android platform. It serves to provide a streamlined service for consumers to obtain information about building their own custom PC.</p>
 						<p>The features includes a Step-By-Step guide for users who are new to PC-building or people who want to refer to basic installation steps. Other than that, this application provides a PC components and peripherals catalogue to allow users to learn about existing parts before making a purchase. Join us today by clicking and downloading the app from the link below:</p>
 						<h2><a href="https://drive.google.com/drive/folders/1z-Ye5wsOkfoGIL_94OY-hAqFkF236mn2?usp=sharing">Download Here!</a></h2>
