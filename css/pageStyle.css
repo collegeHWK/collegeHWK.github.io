@@ -8,6 +8,23 @@
     margin: -30px 0px;
 }
 
+.games-list, .container-box{
+    background-color: #000033;
+    margin: 60px 40px;
+    padding: 25px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.games-list{
+
+}
+
+.container-box{
+
+}
+
 /* FOOTER */
 
 .footer {
