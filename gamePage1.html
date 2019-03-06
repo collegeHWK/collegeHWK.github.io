@@ -1,59 +1,92 @@
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640850-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-135640850-1');
-</script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640850-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <title>Of Lurkers and Curses - Cyd Games Inc.</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/pageStyle.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
-        <script src="js/bootstrap.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        gtag('config', 'UA-135640850-1');
+    </script>
 
-    </head>
-    <body>
-        <div>game information page - Of Lurkers and Curses</div>
+    <title>Of Lurkers and Curses - Cyd Games Inc.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/pageStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 
-        <!-- HEADER -->
-        <div class="jumboContainer">
-            <div class="jumbotron">
-                <div class="headerContainer">
-                    <h1>Of Lurkers and Curses</h1>
-                    <hr> <!-- add lines? -->
-                    <p>desc</p>
-                    <hr> <!-- add lines? -->
-                </div>
-            </div>    
+    <!-- SCRIPT: Side Navigation Bar-->
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("container-boxID").style.width = "300px";
+            document.getElementById("holderID").style.left = "0";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("container-boxID").style.width = "0";
+            document.getElementById("holderID").style.left = "-300px";
+        }
+    </script>
+    <!-- SCRIPT: Side Navigation Bar END-->
+</head>
+
+<body>
+    <div>game information page - Of Lurkers and Curses</div>
+
+    <!-- HEADER -->
+    <div class="jumboContainer">
+        <div class="jumbotron">
+            <div class="headerContainer">
+                <h1>Of Lurkers and Curses</h1>
+                <hr> <!-- add lines? -->
+                <p>desc</p>
+                <hr> <!-- add lines? -->
+            </div>
         </div>
-        <!-- HEADER END -->
+    </div>
+    <!-- HEADER END -->
 
-        <!-- CONTENT/BODY -->
-        <div class="container-box">
-            <p><a href="index.html">Home Page</a></p>
-            <p><a href="gamesListPage.html">Games List Page</a></p>
-            <p><a href="gamesReviewPage.html">Games Review Page</a></p>
-            <p><a href="aboutCydGames.html">About Us Page</a></p>
+    <!-- CONTENT/BODY -->
+    <!-- Side Navigation Bar -->
+    <div id="container-boxID" class="container-box">
+        <p><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p>
+        <div id="holderID" class="holder">
+            <h1 id="sideNavTitle">Side Nav</h1>
+            <p><a id="homeP" href="index.html">Home Page</a></p> <br>
+            <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
+            <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
+            <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
         </div>
-        <!-- CONTENT/BODY -->
+    </div>
 
-        <!-- FOOTER-->
-        <section class="footer">
-                <h1>©2019 Cyd Games Inc.</h1>
-                <a class="lkbtn" href="#top">Back to top</a>
-        </section>
-        <!-- FOOTER END -->
-    </body>
+    <span onclick="openNav()" class="openbtn">&#9776;</span>
+    <!-- Side Navigation Bar END-->
+
+    <!-- DUMMY CONTENT !!!-->
+    <div class="dummy">
+
+    </div>
+    <!-- DUMMY CONTENT !!! END-->
+
+    <!-- CONTENT/BODY -->
+
+    <!-- FOOTER-->
+    <section class="footer">
+        <h1>©2019 Cyd Games Inc.</h1>
+        <a class="lkbtn" href="#top">Back to top</a>
+    </section>
+    <!-- FOOTER END -->
+</body>
+
 </html>

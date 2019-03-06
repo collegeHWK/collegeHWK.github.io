@@ -8,7 +8,7 @@
     margin: -30px 0px;
 }
 
-.games-list, .container-box{
+.games-list{
     background-color: #000033;
     margin: 60px 40px;
     padding: 25px;
@@ -21,9 +21,84 @@
 
 }
 
-.container-box{
-
+/* Side Navigation Bar */
+.container-box {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
+  
+.container-box a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.container-box a:hover {
+    color: #f1f1f1;
+}
+  
+
+.container-box .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.holder{
+    position: fixed;
+    left: -300px;
+    transition: 0.5s;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+.openbtn{
+    font-size: 50px;
+    color: lime;
+    top: 20px;
+    background-color: #4CAF50;
+    position: fixed;
+    padding: 15px;
+    left: -50px;
+    transition: 0.4s;
+    width: 100px;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+.openbtn:hover{
+    left: 0;
+    text-align: right;
+}
+
+#sideNavTitle{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+/* Side Navigation Bar End */
+
+/* DUMMY */
+.dummy{
+    height: 600px;
+}
+/* DUMMY END*/
+
 
 /* FOOTER */
 

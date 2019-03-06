@@ -1,15 +1,15 @@
-<html> 
-        
+<html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640850-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135640850-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-135640850-1');
-</script>
+        gtag('config', 'UA-135640850-1');
+    </script>
 
     <title>ARPCBS - Cyd Games Inc.</title>
     <link href="css/style1.css" rel="stylesheet" type="text/css" />
@@ -36,59 +36,93 @@
             video.volume = 0.2;
         });
     </script>
-</head>
-<body>
-        <div class="wrapper">
-            <section class="content">
-                <p><img src="img/text.png" style="width: 500px; height: 225px;" /></p>
-                <p><img src="img/arrow.png" style="width: 100px; height: 100px; margin-top: 340px;" /></p>
-            </section>
-            <div class="holder" style="background-color: black;">
-                <div class="trim">
-                    <div class="box">
-                        <h4>Augmented Reality Personal Computer Building Simulator</h4>
-                        <video id="videoPanel" style="width: 90%;" controls="true">
-                            <source src="PCBR AR - Concept Promotional Video.mp4" type="video/mp4" />
-                        </video>
-                        <p>ARPCBS (Augmented Reality Personal Computer Building Simulator) is an application developed for
-                            the android platform. It serves to provide a streamlined service for consumers to obtain
-                            information about building their own custom PC.</p>
-                        <p>The features includes a Step-By-Step guide for users who are new to PC-building or people who
-                            want to refer to basic installation steps. Other than that, this application provides a PC
-                            components and peripherals catalogue to allow users to learn about existing parts before making
-                            a purchase. Join us today by clicking and downloading the app from the link below:</p>
-                        <h2><a class="lkbtn" href="https://drive.google.com/drive/folders/1z-Ye5wsOkfoGIL_94OY-hAqFkF236mn2?usp=sharing">Download
-                                Here!</a></h2>
-                        <p>This application utilizes Augmented Reality (AR) technologies to preview such components in AR
-                            environment. As such, users are required to download and print a QR code at about 1/4 or 1/8
-                            size of an A4 paper. The QR Code can be found alongside with the APK file in the download
-                            button.</p>
-                        <p style="text-align: center;"><img src="img/ps.png" style="width: 500px; height: 500px;" /></p>
-                        <br><br><br>
-                        <h4>GALLERY</h4>
-                        <p style="text-align: center;"><img src="img/1.png" style="width: 500px; height: 500px;" /></p>
-                        <p style="text-align: center;"><img src="img/2.png" style="width: 800px; height: 500px;" /></p>
-                        <p style="text-align: center;"><img src="img/3.png" style="width: 500px; height: 500px;" /></p>
-                        <p style="text-align: center;"><img src="img/4.png" style="width: 800px; height: 500px;" /></p>
 
-                    </div>
+    <!-- SCRIPT: Side Navigation Bar-->
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("container-boxID").style.width = "300px";
+            document.getElementById("holderID").style.left = "-300px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("container-boxID").style.width = "0";
+            document.getElementById("holderID").style.left = "-600px";
+        }
+    </script>
+    <!-- SCRIPT: Side Navigation Bar END-->
+</head>
+
+<body>
+    <!-- Side Navigation Bar -->
+    <div id="container-boxID" class="container-box">
+        <p><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p>
+        <div id="holderID" class="holder1">
+            <h1 id="sideNavTitle">Side Nav</h1>
+            <p><a id="homeP" href="index.html">Home Page</a></p> <br>
+            <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
+            <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
+            <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
+        </div>
+    </div>
+
+    <span onclick="openNav()" class="openbtn">&#9776;</span>
+    <!-- Side Navigation Bar END-->
+
+    <div class="wrapper">
+        <section class="content">
+            <p><img src="img/text.png" style="width: 500px; height: 225px;" /></p>
+            <p><img src="img/arrow.png" style="width: 100px; height: 100px; margin-top: 340px;" /></p>
+        </section>
+        <div class="holder" style="background-color: black;">
+            <div class="trim">
+                <div class="box">
+                    <h4>Augmented Reality Personal Computer Building Simulator</h4>
+                    <video id="videoPanel" style="width: 90%;" controls="true">
+                        <source src="PCBR AR - Concept Promotional Video.mp4" type="video/mp4" />
+                    </video>
+                    <p>ARPCBS (Augmented Reality Personal Computer Building Simulator) is an application developed for
+                        the android platform. It serves to provide a streamlined service for consumers to obtain
+                        information about building their own custom PC.</p>
+                    <p>The features includes a Step-By-Step guide for users who are new to PC-building or people who
+                        want to refer to basic installation steps. Other than that, this application provides a PC
+                        components and peripherals catalogue to allow users to learn about existing parts before making
+                        a purchase. Join us today by clicking and downloading the app from the link below:</p>
+                    <h2><a class="lkbtn"
+                            href="https://drive.google.com/drive/folders/1z-Ye5wsOkfoGIL_94OY-hAqFkF236mn2?usp=sharing">Download
+                            Here!</a></h2>
+                    <p>This application utilizes Augmented Reality (AR) technologies to preview such components in AR
+                        environment. As such, users are required to download and print a QR code at about 1/4 or 1/8
+                        size of an A4 paper. The QR Code can be found alongside with the APK file in the download
+                        button.</p>
+                    <p style="text-align: center;"><img src="img/ps.png" style="width: 500px; height: 500px;" /></p>
+                    <br><br><br>
+                    <h4>GALLERY</h4>
+                    <p style="text-align: center;"><img src="img/1.png" style="width: 500px; height: 500px;" /></p>
+                    <p style="text-align: center;"><img src="img/2.png" style="width: 800px; height: 500px;" /></p>
+                    <p style="text-align: center;"><img src="img/3.png" style="width: 500px; height: 500px;" /></p>
+                    <p style="text-align: center;"><img src="img/4.png" style="width: 800px; height: 500px;" /></p>
+
                 </div>
             </div>
-            
-            <!-- CONTENT/BODY -->
-            <div class="container-box">
-                <p><a href="index.html">Home Page</a></p>
-                <p><a href="gamesListPage.html">Games List Page</a></p>
-                <p><a href="gamesReviewPage.html">Games Review Page</a></p>
-                <p><a href="aboutCydGames.html">About Us Page</a></p>
-            </div>
-            <!-- CONTENT/BODY -->
-
-            <section class="footer">
-                <h1>©2019 Cyd Games Inc.</h1>
-                <a class="lkbtn" href="#top">Back to top</a>
-            </section>
         </div>
-    
+
+        <!-- CONTENT/BODY -->
+        <div class="container-box">
+            <p><a href="index.html">Home Page</a></p>
+            <p><a href="gamesListPage.html">Games List Page</a></p>
+            <p><a href="gamesReviewPage.html">Games Review Page</a></p>
+            <p><a href="aboutCydGames.html">About Us Page</a></p>
+        </div>
+        <!-- CONTENT/BODY -->
+
+        <section class="footer">
+            <h1>©2019 Cyd Games Inc.</h1>
+            <a class="lkbtn" href="#top">Back to top</a>
+        </section>
+    </div>
+
 </body>
+
 </html>
