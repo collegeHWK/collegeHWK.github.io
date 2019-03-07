@@ -39,16 +39,24 @@
 
     <!-- SCRIPT: Side Navigation Bar-->
     <script>
-        /* Set the width of the side navigation to 250px */
         function openNav() {
+            document.getElementById("sideBtn1").style.zIndex = 3;
+            document.getElementById("sideBtn2").style.zIndex = 3;
             document.getElementById("container-boxID").style.width = "300px";
             document.getElementById("holderID").style.left = "-300px";
         }
 
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
+            document.getElementById("sideBtn1").style.zIndex = 4;
+            document.getElementById("sideBtn2").style.zIndex = 4;
             document.getElementById("container-boxID").style.width = "0";
             document.getElementById("holderID").style.left = "-600px";
+        }
+    </script>
+
+    <script>
+        function backBtn() {
+            window.location.href = "gamesListPage.html";
         }
     </script>
     <!-- SCRIPT: Side Navigation Bar END-->
@@ -64,10 +72,22 @@
             <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
             <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
             <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
+            <p><a id="aboutP" href="collabPage.html">Collaborators Page</a></p> <br>
         </div>
     </div>
 
-    <span onclick="openNav()" class="openbtn">&#9776;</span>
+    <span onclick="backBtn()" class="backbtn" id="sideBtn1">
+        &#60;&#61;
+        <span class="tooltip">
+            <div class="ttText">Back to Games List</div>
+        </span>
+    </span>
+    <span onclick="openNav()" class="openbtn" id="sideBtn2">
+        &#9776;
+        <span class="tooltip">
+            <div class="ttText">Website Navigation</div>
+        </span>
+    </span>
     <!-- Side Navigation Bar END-->
 
     <div class="wrapper">

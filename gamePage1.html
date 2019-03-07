@@ -38,6 +38,12 @@
             document.getElementById("holderID").style.left = "-300px";
         }
     </script>
+
+    <script>
+        function backBtn() {
+            window.location.href = "gamesListPage.html";
+        }
+    </script>
     <!-- SCRIPT: Side Navigation Bar END-->
 </head>
 
@@ -67,10 +73,23 @@
             <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
             <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
             <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
+            <p><a id="aboutP" href="collabPage.html">Collaborators Page</a></p> <br>
         </div>
     </div>
 
-    <span onclick="openNav()" class="openbtn">&#9776;</span>
+    <span onclick="backBtn()" class="backbtn">
+        &#60;&#61;
+        <span class="tooltip">
+            <div class="ttText">Back to Games List</div>
+        </span>
+    </span>
+    <span onclick="openNav()" class="openbtn">
+        &#9776;
+        <span class="tooltip">
+            <div class="ttText">Website Navigation</div>
+        </span>
+    </span>
+
     <!-- Side Navigation Bar END-->
 
     <!-- DUMMY CONTENT !!!-->

@@ -23,16 +23,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    
+
     <!-- SCRIPT: Side Navigation Bar-->
     <script>
-        /* Set the width of the side navigation to 250px */
         function openNav() {
             document.getElementById("container-boxID").style.width = "300px";
             document.getElementById("holderID").style.left = "0";
         }
 
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("container-boxID").style.width = "0";
             document.getElementById("holderID").style.left = "-300px";
@@ -69,10 +67,16 @@
             <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
             <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
             <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
+            <p><a id="aboutP" href="collabPage.html">Collaborators Page</a></p> <br>
         </div>
     </div>
 
-    <span onclick="openNav()" class="openbtn">&#9776;</span>
+    <span onclick="openNav()" class="openbtn">
+        &#9776;
+        <span class="tooltip">
+            <div class="ttText">Website Navigation</div>
+        </span>
+    </span>
     <!-- Side Navigation Bar END-->
 
     <!-- DUMMY CONTENT !!!-->
