@@ -19,6 +19,33 @@
     color: #ececec;
     font-size: 30px;
 }
+
+.line1, .line2, .line3, .line4{
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    z-index: -1;
+}
+
+.line1{
+    left: 20%;
+    border-left: 30px solid #3f3013;
+}
+
+.line2 {
+    left: 80%;
+    border-left: 30px solid #3f3013;
+}
+
+.line3{
+    border-left: 40px solid 191307;
+    left: 19.74%;
+}
+
+.line4{
+    border-left: 40px solid 191307;
+    left: 79.74%;
+}
 /* HEADER END */
 
 /* Side Navigation Bar */
@@ -188,6 +215,55 @@
 
 
 /* About Us End */
+
+/* Games List Page */
+.gamesContainer{
+    width: 1450px;
+    height: 850px;
+    background-color: 000033;
+    border-radius: 50px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.imgContainer img{
+    width: 1400px;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    transition: 0.5s;
+    border-radius: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#game1{
+    clip:rect(0px,700px,800px,0px);
+    
+}
+
+#game2{
+    clip:rect(0px,1400px,800px,700px);
+}
+
+#game1:hover{
+    clip:rect(0px,1300px,800px,0px);
+    z-index: 1;
+}
+
+#game2:hover{
+    clip:rect(0px,1400px,800px,100px);
+    z-index: 1;
+}
+
+/* Games List Page End*/
+
 /* BODY CONTENT END */
 
 
