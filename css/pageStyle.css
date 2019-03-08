@@ -426,6 +426,53 @@
     color: white;
 }
 /* Of Lurkers and Curses Page END */
+
+/* Collaborators Page */
+.referralholder{
+   
+}
+
+.sideL, .sideR{
+    background-color: #000033;
+    height: 500px;
+    margin: 0px 200px 50px;
+    border-radius: 50px;
+}
+
+.ref1{
+    width: 500px;
+    border-radius: 50px;
+    margin: 75px 50px;
+    position: absolute;
+}
+
+.ref2{
+    position: absolute;
+    margin: 100px  450px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.sideL .descTContainer{
+    padding-top: 40px;
+    padding-left: 600px;
+}
+
+.descTContainer{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.descTContainer h3{
+    font-size: 80px;
+    color: white;
+}
+/* Collaborators Page END */
+
 /* BODY CONTENT END */
 
 
