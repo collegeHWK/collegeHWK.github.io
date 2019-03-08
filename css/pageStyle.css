@@ -226,6 +226,29 @@
     left: 0;
     right: 0;
     margin: auto;
+    text-align: center;
+}
+
+.descG1, .descG2{
+    position: absolute;
+    font-size: 80px;
+    font-family: "Fjalla One";
+    z-index: 2;
+    opacity: 0;
+    transform: 2s;
+    pointer-events:none;
+}
+
+.descG1{
+    top: 30px;
+    left: 120px;
+    color: White;
+}
+
+.descG2{
+    top: 30px;
+    right: 120px;
+    color: black;
 }
 
 .imgContainer img{
@@ -244,15 +267,14 @@
 }
 
 #game1{
-    clip:rect(0px,700px,800px,0px);
-    
+    clip:rect(0px,685px,800px,0px);
 }
 
 #game2{
-    clip:rect(0px,1400px,800px,700px);
+    clip:rect(0px,1400px,800px,715px);
 }
 
-#game1:hover{
+#game1:hover, .descG1:hover{
     clip:rect(0px,1300px,800px,0px);
     z-index: 1;
 }
@@ -260,6 +282,11 @@
 #game2:hover{
     clip:rect(0px,1400px,800px,100px);
     z-index: 1;
+}
+
+#game1:hover ~ .descG1, #game2:hover ~ .descG2{
+    opacity: 1;
+    z-index: 2;
 }
 
 /* Games List Page End*/
