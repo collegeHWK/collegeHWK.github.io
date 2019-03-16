@@ -411,15 +411,11 @@
     background-image: url("../img/Teaser.png");
     background-size: cover;
     height: 1000px;
+    margin-top: -20px;
 }
   
 .timerContainer{
-    position: absolute;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
+    padding: 325px 600px 0px;
 }
 
 .timerContainer h1{
