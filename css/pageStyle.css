@@ -544,9 +544,12 @@
 /* Home Page */
 .homeContainer {
     position: relative;
-    width: 50%;
+    width: 40%;
+    display: inline-block;
+    padding: 20px;
+    margin: 50px 0px 50px 110px;
 }
-  
+
 .homeImage {
     opacity: 1;
     display: block;
@@ -568,7 +571,7 @@
 }
   
 .homeContainer:hover .homeImage {
-    opacity: 0.3;
+    opacity: 0.2;
 }
   
 .homeContainer:hover .homeTextCenter {
@@ -576,10 +579,33 @@
 }
   
 .textCenter {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
+    background-color: lightblue;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Quicksand";
     padding: 16px 32px;
+    border-radius: 20px;
+    border-style: dashed;
+    border-color: purple;
+}
+
+.homeContainerText{
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.homeContainerText h2{
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+.homeContainerText h1{
+    text-align: center;
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: bold;
 }
 /* Home Page END */
 
