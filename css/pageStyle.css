@@ -120,6 +120,7 @@
 .openbtn:hover, .backbtn:hover{
     left: 0;
     text-align: right;
+    background-color: darkgoldenrod;
 }
 
 #sideNavTitle{
@@ -428,60 +429,110 @@
 /* Of Lurkers and Curses Page END */
 
 /* Collaborators Page */
-.referralholder{
-   
-}
-
-.sideL, .sideR{
+.sideL{
     background-color: #000033;
-    height: 500px;
+    height: 400px;
     margin: 0px 200px 50px;
     border-radius: 50px;
 }
 
-.ref1{
-    width: 500px;
-    border-radius: 50px;
-    margin: 75px 50px;
-    position: absolute;
-}
-
-.ref2{
-    position: absolute;
-    margin: 100px  450px;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: white;
-}
-
-.ref3{
-    position: absolute;
-    padding: 10px;
-}
-
 .sideL .descTContainer{
-    padding-top: 30px;
-    padding-left: 30%;
-    padding-right: 15%;
-    
+    padding-left: 600px;
+    padding-right: 240px;
 }
 
 .descTContainer{
+    min-width: 1700px;
     position: absolute;
-    font-size: 50px;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 
 .descTContainer h3{
-    font-size: 80px;
     color: white;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.descTContainer h3:hover{
+    color: red;
+}
+
+.descTContainer a:hover{
+    text-decoration: none;
 }
 
 .descTContainer P{
     font-size:30px;
-    color: white;
+}
+
+.sideL img{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.ref1{
+    width: 500px;
+    margin: 50px 50px;
+}
+
+.ref2{
+    margin: 100px  450px;
+    background-color: white;
+}
+
+.ref3{
+    margin: 30px 50px;
+}
+
+.ref4{
+    margin: 75px  425px;
+    background-color: white;
+}
+
+.ref5{
+    margin: 55px 50px;
+}
+
+.ref6{
+    margin: 85px  275px;
+}
+
+.ref7{
+    margin: 30px 50px;
+}
+
+.ref8{
+    margin: 50px  270px;
+}
+
+.ref9{
+    margin: 35px 50px;
+}
+
+.ref10{
+    margin: 65px  385px;
+}
+
+.ref11{
+    margin: 35px 50px;
+}
+
+.ref12{
+    margin: 55px  385px;
+}
+
+.ref13{
+    margin: 30px 50px;
+}
+
+.ref14{
+    margin: 55px  330px;
 }
 /* Collaborators Page END */
 
