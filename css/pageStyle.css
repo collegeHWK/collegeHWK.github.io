@@ -476,7 +476,7 @@
     border-radius: 50px;
     z-index: 1;
 }
-.ref2, .ref4, .ref6, .ref8, .ref10, .ref12, .ref14{
+.ref2, .ref4, .ref6, .ref8, .ref10, .ref12, .ref14, .ref16{
     z-index: 2;
     pointer-events:none;
 }
@@ -538,6 +538,14 @@
 
 .ref14{
     margin: 55px  330px;
+}
+
+.ref15{
+    margin: 28px 50px;
+}
+
+.ref16{
+    margin: 45px  300px;
 }
 /* Collaborators Page END */
 
