@@ -45,10 +45,51 @@
         }
     </script>
     <!-- SCRIPT: Side Navigation Bar END-->
+
+    <!-- SCRIPT: is secweeeet rooVV-->
+    <script>
+        var chk1 = false;
+        var chk2 = false;
+        var chk3 = false;
+        var chk4 = false;
+        var chk5 = false;
+        var chk6 = false;
+        var chk7 = false;
+        function secwet(num) {
+            if (num == 0) {
+                document.getElementById("s0").style.color = "lime";
+                chk1 = true;
+            } else if (num == 1) {
+                document.getElementById("s1").style.color = "lime";
+                chk2 = true;
+            } else if (num == 2) {
+                document.getElementById("s2").style.color = "lime";
+                chk3 = true;
+            } else if (num == 3) {
+                document.getElementById("s3").style.color = "lime";
+                chk4 = true;
+            } else if (num == 4) {
+                document.getElementById("s4").style.color = "lime";
+                chk5 = true;
+            } else if (num == 5) {
+                document.getElementById("s5").style.color = "lime";
+                chk6 = true;
+            } else if (num == 6) {
+                document.getElementById("s6").style.color = "lime";
+                chk7 = true;
+            }
+
+            if (chk1 == true && chk2 == true && chk3 == true && chk4 == true && chk5 == true && chk6 == true && chk7 == true) {
+                document.getElementById("showSecwet").style.opacity = 1;
+            }
+        }
+    </script>
+    <!-- SCRIPT END-->
 </head>
 
 <body>
     <div class="bodyHolder">
+        <img id="showSecwet" class="showSecwet" src="img/UC.png" />
         <!-- HEADER -->
         <div class="jumboContainer">
             <div class="headerContainer">
@@ -60,8 +101,7 @@
             <div class="line2"></div>
             <div class="headerContainer">
                 <h2>The following are partners and collaborators who helped our growth. Visit our affiliates below for
-                    their
-                    services.</h2>
+                    their services.</h2>
             </div>
         </div>
         <!-- HEADER END -->
@@ -92,41 +132,49 @@
             <div class="referralholder">
                 <!-- Referral KCB -->
                 <div class="sideL">
-                    <img class="ref1" src="img/collab/1.jpg" />
+                    <a href="https://keacheeboon.github.io/oldnewgames/">
+                        <img class="ref1" src="img/collab/1.jpg" />
+                    </a>
                     <img class="ref2" src="img/collab/1.ico" />
                     <div class="descTContainer">
                         <a href="https://keacheeboon.github.io/oldnewgames/">
                             <h3>Old New Games</h3>
                         </a>
                         <p>
-                            This website offers content reviews for both old and new games. Developed by Kea Chee Boon,
-                            the website serves to redirect users who are interested in purchasing the video game that he
-                            has reviewed. Links are placed in every game that has been reviewed to redirect users to the
-                            relevant steam page where the user can purchase aforementioned game.
+                            This website offers content reviews for both old and new game<a id="s0" class="secwet"
+                                onclick="secwet(this, 0)">s</a> Developed by Kea Chee Boon, the website serves to
+                            redirect users who are interested in purchasing the video game that he has reviewed. Links
+                            are placed in every game that has been reviewed to redirect users to the relevant steam page
+                            where the user can purchase aforementioned game.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral SA -->
                 <div class="sideL">
-                    <img class="ref3" src="img/collab/2.png" />
+                    <a href="http://troncoinc.github.io">
+                        <img class="ref3" src="img/collab/2.png" />
+                    </a>
                     <img class="ref4" src="img/collab/2.1.png" />
                     <div class="descTContainer">
-                        <a href="http://axelgames.ga/">
+                        <a href="http://troncoinc.github.io">
                             <h3>Axel Games</h3>
                         </a>
                         <p>
                             Axel games presents the latest popular video games for the current year. Developed by Syed
                             Alwi, this page has been stylishly created for project purposes. New entries are updated
-                            according to the trends of the market and hype. Users are provided with information such as
-                            platform, game description, and so on.
+                            according to the trends of the market and hyp<a id="s1" class="secwet"
+                                onclick="secwet(1)">e</a>. Users are provided with information such as platform, game
+                            description, and so on.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral KJK -->
                 <div class="sideL">
-                    <img class="ref5" src="img/collab/7.png" />
+                    <a href="https://kwongjk.github.io/J.K-Travel/">
+                        <img class="ref5" src="img/collab/7.png" />
+                    </a>
                     <img class="ref6" src="img/collab/7.1.png" />
                     <div class="descTContainer">
                         <a href="https://kwongjk.github.io/J.K-Travel/">
@@ -136,15 +184,17 @@
                             J.K Travel is an organization dedicated to providing the finest travel experience for its
                             customers. You can refer to their website in order to find out about the available locations
                             ranging from different countries. Alongside with previewing popular tourist locations, J.K
-                            Travel can help plan and book for your trip at reasonable rates. This website is developed
-                            by Kwong Jun Kit.
+                            Travel can help pl<a id="s2" class="secwet" onclick="secwet(2)">a</a>n and book for your
+                            trip at reasonable rates. This website is developed by Kwong Jun Kit.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral WCF -->
                 <div class="sideL">
-                    <img class="ref7" src="img/collab/3.png" />
+                    <a href="https://wcfypc.github.io/GamuMania/">
+                        <img class=" ref7" src="img/collab/3.png" />
+                    </a>
                     <img class="ref8" src="img/collab/3.1.png" />
                     <div class="descTContainer">
                         <a href="https://wcfypc.github.io/GamuMania/">
@@ -154,14 +204,17 @@
                             GamuMania presents the latest news in the gaming industry over various fields such as
                             previewing the latest technology or the hottest games on the charts. The website is
                             developed by Wong Chee Foong and is focused on provide gaming journalism for those who wants
-                            to know about the on-goings of the gaming industry.
+                            to know about the on-<a id="s3" class="secwet" onclick="secwet(3)">g</a>oings of the
+                            gaming industry.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral YSP -->
                 <div class="sideL">
-                    <img class="ref9" src="img/collab/4.jpg" />
+                    <a href="https://Lyap05.github.io">
+                        <img class="ref9" src="img/collab/4.jpg" />
+                    </a>
                     <img class="ref10" src="img/collab/4.1.png" />
                     <div class="descTContainer">
                         <a href="https://Lyap05.github.io">
@@ -170,16 +223,18 @@
                         <p>
                             Developed by Yap Sei Ping, this website serves as a promotional website for their 'brick and
                             motor' business. It serves to provide information regarding the business such as location,
-                            food and beverage menu, contact information and so on. If you are in need of a place to
-                            chill with your friends, check out their cafe or look through their website to see if it
-                            suits your taste.
+                            food and beverage men<a id="s4" class="secwet" onclick="secwet(4)">u</a>, contact
+                            information and so on. If you are in need of a place to chill with your friends, check out
+                            their cafe or look through their website to see if it suits your taste.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral YCC -->
                 <div class="sideL">
-                    <img class="ref11" src="img/collab/5.png" />
+                    <a href="https://ypcyapcienchen.github.io">
+                        <img class="ref11" src="img/collab/5.png" />
+                    </a>
                     <img class="ref12" src="img/collab/5.1.jpg" />
                     <div class="descTContainer">
                         <a href="https://ypcyapcienchen.github.io">
@@ -187,31 +242,35 @@
                         </a>
                         <p>
                             One of Malaysia's eyewear organization, Fuvis Ocular, brings the service of e-commerce and
-                            delivery of product for consumers who require eyewear ranging from different variants. The
-                            website, developed by Yap Cien Chen, aims to provide users with information on eyewear,
-                            purchasing of such eyewear and so on. Their website will provide all your spectacle needs.
+                            de<a id="s5" class="secwet" onclick="secwet(5)">l</a>ivery of product for consumers who
+                            require eyewear ranging from different variants. The website, developed by Yap Cien Chen,
+                            aims to provide users with information on eyewear, purchasing of such eyewear and so on.
+                            Their website will provide all your spectacle needs.
                         </p>
                     </div>
                 </div>
 
                 <!-- Referral SHL -->
                 <div class="sideL">
-                    <img class="ref13" src="img/collab/6.png" />
+                    <a href="https://sohhuili.github.io">
+                        <img class="ref13" src="img/collab/6.png" />
+                    </a>
                     <img class="ref14" src="img/collab/6.1.png" />
                     <div class="descTContainer">
                         <a href="https://sohhuili.github.io">
                             <h3>Tistune</h3>
                         </a>
                         <p>
-                            Tistune is an online retailer for various brands of watches. Developed by Soh Hui Li, this
-                            site provides e-commerce service for users interested in purchasing wristwatches of varying
-                            types from different brands. It ranges from men's and women's watch to smartwatches and
-                            more. If you are interested in getting a watch for yourself or as a gift, check out their
-                            website.
+                            Tistune is an online retai<a id="s6" class="secwet" onclick="secwet(6)">l</a>er for
+                            various brands of watches. Developed by Soh Hui Li, this site provides e-commerce service
+                            for users interested in purchasing wristwatches of varying types from different brands. It
+                            ranges from men's and women's watch to smartwatches and more. If you are interested in
+                            getting a watch for yourself or as a gift, check out their website.
                         </p>
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- CONTENT/BODY -->
 

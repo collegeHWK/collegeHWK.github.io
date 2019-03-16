@@ -458,7 +458,7 @@
     transition: 0.5s;
 }
 
-.descTContainer h3:hover{
+.descTContainer h3:hover, .sideL a:hover~.descTContainer h3{
     color: red;
 }
 
@@ -474,11 +474,16 @@
     position: absolute;
     padding: 10px;
     border-radius: 50px;
+    z-index: 1;
+}
+.ref2, .ref4, .ref6, .ref8, .ref10, .ref12, .ref14{
+    z-index: 2;
+    pointer-events:none;
 }
 
 .ref1{
     width: 500px;
-    margin: 50px 50px;
+    margin: 40px 50px;
 }
 
 .ref2{
@@ -538,6 +543,22 @@
 
 /* BODY CONTENT END */
 
+/* SECWWEEEET rooVV*/
+.secwet{
+    cursor: pointer;
+    color:white; /*change*/
+}
+
+.showSecwet {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    transition: 10.0s;
+}
+
+/* SECWWEEEET rooVV END*/
 
 /* FOOTER */
 
@@ -583,5 +604,4 @@
 a:hover {
     color: red;
 }
-
 /* FOOTER END */
