@@ -15,8 +15,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/Logo.png" />
     <meta charset="UTF-8">
     <meta name="desc" content="Game Review Page of Cydinc.ga / collegehwk.github.io">
-    <meta name="keyword1" content="game review, collaborators, game, games, publish, review, ARPCBS, Of Lurkers and Curses">
-    <meta name="keyword2" content="games reviews, game online, games online, game publisher, game reviewer, ratings, information, genre">
+    <meta name="keyword1"
+        content="game review, collaborators, game, games, publish, review, ARPCBS, Of Lurkers and Curses">
+    <meta name="keyword2"
+        content="games reviews, game online, games online, game publisher, game reviewer, ratings, information, genre">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/pageStyle.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -65,222 +67,237 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <div class="jumboContainer">
-        <div class="headerContainer">
-            <h1>Games Review</h1>
+    <div class="bodyHolder">
+        <!-- HEADER -->
+        <div class="jumboContainer">
+            <div class="headerContainer">
+                <h1>Games Review</h1>
+            </div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="headerContainer">
+                <h2>Various games that are worthy of praise by us and the community are reviewed here.</h2>
+            </div>
         </div>
-        <div class="line3"></div>
-        <div class="line4"></div>
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="headerContainer">
-            <h2>Various games that are worthy of praise by us and the community are reviewed here.</h2>
-        </div>
-    </div>
-    <!-- HEADER END -->
+        <!-- HEADER END -->
 
-    <!-- CONTENT/BODY -->
-    <!-- Side Navigation Bar -->
-    <div id="container-boxID" class="container-box">
-        <p><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p>
-        <div id="holderID" class="holder">
-            <h1 id="sideNavTitle">Side Nav</h1>
-            <p><a id="homeP" href="index.html">Home Page</a></p> <br>
-            <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
-            <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
-            <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
-            <p><a id="aboutP" href="collabPage.html">Collaborators Page</a></p> <br>
+        <!-- CONTENT/BODY -->
+        <!-- Side Navigation Bar -->
+        <div id="container-boxID" class="container-box">
+            <p><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></p>
+            <div id="holderID" class="holder">
+                <h1 id="sideNavTitle">Side Nav</h1>
+                <p><a id="homeP" href="index.html">Home Page</a></p> <br>
+                <p><a id="listP" href="gamesListPage.html">Games List Page</a></p> <br>
+                <p><a id="reviewP" href="gamesReviewPage.html">Games Review Page</a></p> <br>
+                <p><a id="aboutP" href="aboutCydGames.html">About Us Page</a></p> <br>
+                <p><a id="aboutP" href="collabPage.html">Collaborators Page</a></p> <br>
+            </div>
         </div>
-    </div>
 
-    <span onclick="openNav()" class="openbtn">
-        &#9776;
-        <span class="tooltip">
-            <div class="ttText">Website Navigation</div>
+        <span onclick="openNav()" class="openbtn">
+            &#9776;
+            <span class="tooltip">
+                <div class="ttText">Website Navigation</div>
+            </span>
         </span>
-    </span>
-    <!-- Side Navigation Bar END-->
+        <!-- Side Navigation Bar END-->
 
-    <div class="bodyContent">
-        <div class="reviewContainer">
-            <div class="tab">
-                <button class="tablinks" onclick="gameR(event, 'SlimeRancher')">Slime Rancher</button>
-                <button class="tablinks" onclick="gameR(event, 'Bioshock1')">Bioshock 1</button>
-                <button class="tablinks" onclick="gameR(event, 'Bioshock2')">Bioshock 2</button>
-                <button class="tablinks" onclick="gameR(event, 'EBF4')">Epic Battle Fantasy 4</button>
+        <div class="bodyContent">
+            <div class="reviewContainer">
+                <div class="tab">
+                    <button class="tablinks" onclick="gameR(event, 'SlimeRancher')">Slime Rancher</button>
+                    <button class="tablinks" onclick="gameR(event, 'Bioshock1')">Bioshock 1</button>
+                    <button class="tablinks" onclick="gameR(event, 'Bioshock2')">Bioshock 2</button>
+                    <button class="tablinks" onclick="gameR(event, 'EBF4')">Epic Battle Fantasy 4</button>
 
-                <button class="tablinks" onclick="gameR(event, 'BioshockInfinite')">Bioshock Infinite</button>
-                <button class="tablinks" onclick="gameR(event, 'LoL')">League of Legends</button>
-                <button class="tablinks" onclick="gameR(event, 'Fallout4')">Fallout 4</button>
-                <button class="tablinks" onclick="gameR(event, 'Starcraft2')">Starcraft 2</button>
-            </div>
+                    <button class="tablinks" onclick="gameR(event, 'BioshockInfinite')">Bioshock Infinite</button>
+                    <button class="tablinks" onclick="gameR(event, 'LoL')">League of Legends</button>
+                    <button class="tablinks" onclick="gameR(event, 'Fallout4')">Fallout 4</button>
+                    <button class="tablinks" onclick="gameR(event, 'Starcraft2')">Starcraft 2</button>
+                </div>
 
-            <div id="SlimeRancher" class="tabcontent">
-                <h3>Slime Rancher</h3>
-                <p>
-                    Slime Rancher is a cute and relaxing game about ranching in an unexplored world. You play
-                    as Beatrix LeBeau and can traverse the lands filled with bouncy slimes. With your nifty
-                    equipments in hand, you can capture slimes and keep them on your ranch. by feeding the slime
-                    with specific types of food depending on their sub-species, you can collect plorts to be sold
-                    off for money. In this sandbox-style, first-person game, you are free to do whatever you want
-                    on your ranch and beyond.
-                </p>
-                <p>
-                    Asthetics:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Gameplay:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Story:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <br>
-                Final Verdict: It is a lovely game, within a well-created environment. However, it will eventually
-                become too repetitive in terms of gameplay.
-            </div>
+                <div id="SlimeRancher" class="tabcontent">
+                    <h3>Slime Rancher</h3>
+                    <p>
+                        Slime Rancher is a cute and relaxing game about ranching in an unexplored world. You play
+                        as Beatrix LeBeau and can traverse the lands filled with bouncy slimes. With your nifty
+                        equipments in hand, you can capture slimes and keep them on your ranch. by feeding the slime
+                        with specific types of food depending on their sub-species, you can collect plorts to be sold
+                        off for money. In this sandbox-style, first-person game, you are free to do whatever you want
+                        on your ranch and beyond.
+                    </p>
+                    <p>
+                        Asthetics:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Gameplay:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Story:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <br>
+                    Final Verdict: It is a lovely game, within a well-created environment. However, it will eventually
+                    become too repetitive in terms of gameplay.
+                </div>
 
-            <div id="Bioshock1" class="tabcontent">
-                <h3>Bioshock 1</h3>
-                <p>
-                    Bioshock 1 is a first person game based on the shooter genre. You play as Jack who was involved
-                    in a violent plane crash which resulted in him being the only survivor. You discover an entrance
-                    which leads to the hidden world of Rapture, an underwater city. You will meet a cast of characters,
-                    various enemies, and a wide range of weaponry to help your journey in this wonderous world.
-                </p>
-                <p>
-                    Asthetics:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Gameplay:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Story:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-                <br>
-                Final Verdict: An amazing game even though it is running on a dataed engine. The story is compelling and
-                you need to pay close attention to details of the story.
-            </div>
+                <div id="Bioshock1" class="tabcontent">
+                    <h3>Bioshock 1</h3>
+                    <p>
+                        Bioshock 1 is a first person game based on the shooter genre. You play as Jack who was involved
+                        in a violent plane crash which resulted in him being the only survivor. You discover an entrance
+                        which leads to the hidden world of Rapture, an underwater city. You will meet a cast of
+                        characters,
+                        various enemies, and a wide range of weaponry to help your journey in this wonderous world.
+                    </p>
+                    <p>
+                        Asthetics:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Gameplay:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Story:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <br>
+                    Final Verdict: An amazing game even though it is running on a dataed engine. The story is compelling
+                    and
+                    you need to pay close attention to details of the story.
+                </div>
 
 
-            <div id="Bioshock2" class="tabcontent">
-                <h3>Bioshock 2</h3>
-                <p>
-                    Bioshock 2 is the sequel to Bioshock1. You return to Rapture and play as the main protagonist, an
-                    older
-                    type of "Big Daddy" that servers to protec the "Little Sisters" of Rapture. The journey this time
-                    involves
-                    finding out what has happened to your "assigned" Little Sister after Rapture has fallen to madness.
-                    Defeat
-                    countless enemies with your trust weapon and drill them to bits.
-                </p>
-                <p>
-                    Asthetics:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Gameplay:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-                <p>
-                    Story:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-                <br>
-                Final Verdict: Similarly to Bioshock1, it is running on a data engine which may result in average
-                graphics.However, the story is very interesting and the gameplay has been improved compared to the
-                previous game.
-            </div>
+                <div id="Bioshock2" class="tabcontent">
+                    <h3>Bioshock 2</h3>
+                    <p>
+                        Bioshock 2 is the sequel to Bioshock1. You return to Rapture and play as the main protagonist,
+                        an
+                        older
+                        type of "Big Daddy" that servers to protec the "Little Sisters" of Rapture. The journey this
+                        time
+                        involves
+                        finding out what has happened to your "assigned" Little Sister after Rapture has fallen to
+                        madness.
+                        Defeat
+                        countless enemies with your trust weapon and drill them to bits.
+                    </p>
+                    <p>
+                        Asthetics:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Gameplay:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p>
+                        Story:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <br>
+                    Final Verdict: Similarly to Bioshock1, it is running on a data engine which may result in average
+                    graphics.However, the story is very interesting and the gameplay has been improved compared to the
+                    previous game.
+                </div>
 
-            <div id="BioshockInfinite" class="tabcontent">
-                <h3>Bioshock Infinite</h3>
-                <p>
-                    Bioshock Infinite is third entry to the Bioshock franchise and takes on a new theme and location.
-                    This time, you play as Booker DeWitt, who is tasked to finding Elizabeth from the floating city of 
-                    Columbia. In this first person shooter game, you are to defeat enemies through the means of power
-                    and weapons in order to complete your objective.
-                </p>
-                <p>
-                    Asthetics:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-                <p>
-                    Gameplay:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                <p>
-                    Story:
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </p>
-                <br>
-                Final Verdict: This sequel comes as a suprise. Even though it has dropped themes from the original Bioshocks,
-                it still maintained a compelling-story telling and has a much more polished gameplay mechanics. Furthermore,
-                graphics are much better compared to previous entries.
-            </div>
+                <div id="BioshockInfinite" class="tabcontent">
+                    <h3>Bioshock Infinite</h3>
+                    <p>
+                        Bioshock Infinite is third entry to the Bioshock franchise and takes on a new theme and
+                        location.
+                        This time, you play as Booker DeWitt, who is tasked to finding Elizabeth from the floating city
+                        of
+                        Columbia. In this first person shooter game, you are to defeat enemies through the means of
+                        power
+                        and weapons in order to complete your objective.
+                    </p>
+                    <p>
+                        Asthetics:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <p>
+                        Gameplay:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <p>
+                        Story:
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                    <br>
+                    Final Verdict: This sequel comes as a suprise. Even though it has dropped themes from the original
+                    Bioshocks,
+                    it still maintained a compelling-story telling and has a much more polished gameplay mechanics.
+                    Furthermore,
+                    graphics are much better compared to previous entries.
+                </div>
 
-            <div id="EBF4" class="tabcontent">
-                <h3>Epic Battle Fantasy 4</h3>
-                <p>
-                    Epic Battle Fantasy 4 is turn-based game which is heavily inspired by classic RPGS. After the events of EBF 3,
-                    Matt, Natalie, Lance, and NoLegs continued their mission to claim dibs on all loot of the world. However, in a
-                    quiet little village of Greenwood, a sacred jewel has been stolen. Anna, the village ranger sets out to recover
-                    the jewels by enlisting the help of the three memebers before the jewels are used for the wrong reasons.
-                </p>
-                <p>
+                <div id="EBF4" class="tabcontent">
+                    <h3>Epic Battle Fantasy 4</h3>
+                    <p>
+                        Epic Battle Fantasy 4 is turn-based game which is heavily inspired by classic RPGS. After the
+                        events of EBF 3,
+                        Matt, Natalie, Lance, and NoLegs continued their mission to claim dibs on all loot of the world.
+                        However, in a
+                        quiet little village of Greenwood, a sacred jewel has been stolen. Anna, the village ranger sets
+                        out to recover
+                        the jewels by enlisting the help of the three memebers before the jewels are used for the wrong
+                        reasons.
+                    </p>
+                    <p>
                         Asthetics:
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -305,20 +322,26 @@
                         <span class="fa fa-star checked"></span>
                     </p>
                     <br>
-                    Final Verdict: The EBF series is one of the my all-time favourite games. Its history dated to the old days of
-                    flash games on various flash game websites. EBF4 is one of the surviving games from the old era of video games.
+                    Final Verdict: The EBF series is one of the my all-time favourite games. Its history dated to the
+                    old days of
+                    flash games on various flash game websites. EBF4 is one of the surviving games from the old era of
+                    video games.
                     This game may lack the flash of a modern game but its classic style will be cherished.
-            </div>
+                </div>
 
-            <div id="LoL" class="tabcontent">
-                <h3>League of Legends</h3>
-                <p>
-                    League of Legends is one of the oldest in the genre of Multiplayer Online Battle Arena games. While League of Legends is old,
-                    development is still on-going and may never end. This game involves 5 players who are pitted against 5 other players
-                    in an arena. Through the use of various champions who has a wide variety of skills, players must work together and
-                    strategize their gameplay in order to defeat the opponents, claim objectives, and destroy the enemy nexus. 
-                </p>
-                <p>
+                <div id="LoL" class="tabcontent">
+                    <h3>League of Legends</h3>
+                    <p>
+                        League of Legends is one of the oldest in the genre of Multiplayer Online Battle Arena games.
+                        While League of Legends is old,
+                        development is still on-going and may never end. This game involves 5 players who are pitted
+                        against 5 other players
+                        in an arena. Through the use of various champions who has a wide variety of skills, players must
+                        work together and
+                        strategize their gameplay in order to defeat the opponents, claim objectives, and destroy the
+                        enemy nexus.
+                    </p>
+                    <p>
                         Asthetics:
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -343,23 +366,29 @@
                         <span class="fa fa-star"></span>
                     </p>
                     <br>
-                    Final Verdict: League of Legends as a game is only priotised for the gameplay aspects. While there are stories around for users to
-                    discover lore, it is not the main aspect of the game. However, it should also be noted that the gameplay may become
+                    Final Verdict: League of Legends as a game is only priotised for the gameplay aspects. While there
+                    are stories around for users to
+                    discover lore, it is not the main aspect of the game. However, it should also be noted that the
+                    gameplay may become
                     repetitive and it is advised to explore this game with friends.
                 </div>
-    
-               
 
-            <div id="Fallout4" class="tabcontent">
-                <h3>Fallout 4</h3>
-                <p>
-                    Fallout 4 is one of the games which I'm on the fence about. This game revolves around the Lone wanderer exploring
-                    the remnants of Boston in a world ravaged by nuclear bombardment. Your goal is to find your son, who was taken from
-                    the vault just when the bombs started to fall. However, you have the freedom to complete whatever goals or quests
-                    that you want to do first. This first person shooter game also has a outpost system where you can create outposts
-                    for survivors to join.
-                </p>
-                <p>
+
+
+                <div id="Fallout4" class="tabcontent">
+                    <h3>Fallout 4</h3>
+                    <p>
+                        Fallout 4 is one of the games which I'm on the fence about. This game revolves around the Lone
+                        wanderer exploring
+                        the remnants of Boston in a world ravaged by nuclear bombardment. Your goal is to find your son,
+                        who was taken from
+                        the vault just when the bombs started to fall. However, you have the freedom to complete
+                        whatever goals or quests
+                        that you want to do first. This first person shooter game also has a outpost system where you
+                        can create outposts
+                        for survivors to join.
+                    </p>
+                    <p>
                         Asthetics:
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -384,21 +413,27 @@
                         <span class="fa fa-star"></span>
                     </p>
                     <br>
-                    Final Verdict: The most prominant fallout game for me was Fallout: New Vegas. That game spoiled me with its
-                    amazing story-telling and mechanics. Fallout4 on the other hand, does not have that feeling. However,
+                    Final Verdict: The most prominant fallout game for me was Fallout: New Vegas. That game spoiled me
+                    with its
+                    amazing story-telling and mechanics. Fallout4 on the other hand, does not have that feeling.
+                    However,
                     its gameplay has improved from updates to the engine used.
-            </div>
+                </div>
 
-            <div id="Starcraft2" class="tabcontent">
-                <h3>Starcraft 2</h3>
-                <p>
-                    Starcraft 2 is a real-time strategic game invovling three different races. This game comprises of 3 sections:
-                    The main campaign; The online PVP; and The custom games. The main campaign tells the story of the Terran, Zerg,
-                    and Protoss race after the events of Starcraft: Broodwar. The online PVP involves player-versus-player gameplay
-                    in which players pick a race and battle each other until one player remains. Lastly, the custom games involve
-                    player-made arcade modes and the Co=op mission modes.
-                </p>
-                <p>
+                <div id="Starcraft2" class="tabcontent">
+                    <h3>Starcraft 2</h3>
+                    <p>
+                        Starcraft 2 is a real-time strategic game invovling three different races. This game comprises
+                        of 3 sections:
+                        The main campaign; The online PVP; and The custom games. The main campaign tells the story of
+                        the Terran, Zerg,
+                        and Protoss race after the events of Starcraft: Broodwar. The online PVP involves
+                        player-versus-player gameplay
+                        in which players pick a race and battle each other until one player remains. Lastly, the custom
+                        games involve
+                        player-made arcade modes and the Co=op mission modes.
+                    </p>
+                    <p>
                         Asthetics:
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -423,12 +458,12 @@
                         <span class="fa fa-star checked"></span>
                     </p>
                     <br>
-                    Final Verdict: Starcraft 2 hit the nail on many points for me. I was able to enjoy a good story in the campaign, and have
+                    Final Verdict: Starcraft 2 hit the nail on many points for me. I was able to enjoy a good story in
+                    the campaign, and have
                     fun in arcade mode with friends. Starcraft 2 is a successful sequel to the original Starcraft game.
+                </div>
             </div>
         </div>
-    </div>
-    </div>
 
     <!-- CONTENT/BODY -->
 
@@ -438,6 +473,7 @@
         <a class="lkbtn" href="#top">Back to top</a>
     </section>
     <!-- FOOTER END -->
+    </div>
 </body>
 
 </html>

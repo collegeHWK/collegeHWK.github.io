@@ -1,3 +1,7 @@
+.bodyHolder{
+    min-width: 1900px;
+}
+
 /* HEADER */
 .headerContainer{
     background-color: #000033;
@@ -454,9 +458,16 @@
     background-color: white;
 }
 
+.ref3{
+    position: absolute;
+    padding: 10px;
+}
+
 .sideL .descTContainer{
-    padding-top: 40px;
-    padding-left: 600px;
+    padding-top: 30px;
+    padding-left: 30%;
+    padding-right: 15%;
+    
 }
 
 .descTContainer{
@@ -464,11 +475,16 @@
     font-size: 50px;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
-    
+    text-align: justify;
 }
 
 .descTContainer h3{
     font-size: 80px;
+    color: white;
+}
+
+.descTContainer P{
+    font-size:30px;
     color: white;
 }
 /* Collaborators Page END */
