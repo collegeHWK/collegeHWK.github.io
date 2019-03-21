@@ -1,5 +1,6 @@
 .bodyHolder{
-    min-width: 100%;
+    width: 1900px;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -475,6 +476,8 @@
     padding: 10px;
     border-radius: 50px;
     z-index: 1;
+    max-height: 300px;
+    max-width: 100%;
 }
 .ref2, .ref4, .ref6, .ref8, .ref10, .ref12, .ref14, .ref16{
     z-index: 2;
