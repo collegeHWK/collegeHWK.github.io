@@ -432,18 +432,18 @@
 .sideL{
     background-color: #000033;
     height: 400px;
-    margin: 0px 200px 50px;
     border-radius: 50px;
+    margin: 100px 75px;
+    
 }
 
 .sideL .descTContainer{
     padding-left: 600px;
-    padding-right: 240px;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 
 .descTContainer{
-    min-width: 1700px;
-    position: absolute;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
