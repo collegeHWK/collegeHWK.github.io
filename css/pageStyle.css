@@ -1,5 +1,5 @@
 .bodyHolder{
-    width: 1900px;
+    min-width: 100%;
     margin: 0 auto;
 }
 
@@ -433,18 +433,18 @@
 .sideL{
     background-color: #000033;
     height: 400px;
+    margin: 0px 200px 50px;
     border-radius: 50px;
-    margin: 100px 75px;
-    
 }
 
 .sideL .descTContainer{
     padding-left: 600px;
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-right: 240px;
 }
 
 .descTContainer{
+    min-width: 1700px;
+    position: absolute;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
@@ -476,8 +476,6 @@
     padding: 10px;
     border-radius: 50px;
     z-index: 1;
-    max-height: 300px;
-    max-width: 100%;
 }
 .ref2, .ref4, .ref6, .ref8, .ref10, .ref12, .ref14, .ref16{
     z-index: 2;
