@@ -68,6 +68,25 @@
         }
     </script>
     <!-- SCRIPT: Side Navigation Bar END-->
+
+    <!-- SCRIPT: Delay button presses -->
+    <script>
+        function disBtn() {
+            document.getElementById("dwlAppBtn").style.pointerEvents = "none";
+            document.getElementById("dwlQRBtn").style.pointerEvents = "none";
+        }
+
+        function enaBtn() {
+            document.getElementById("dwlAppBtn").style.pointerEvents = "initial";
+            document.getElementById("dwlQRBtn").style.pointerEvents = "initial";
+        }
+
+        function disableBtn() {
+            disBtn();
+            setTimeout(function () { enaBtn(); }, 10000);
+        }
+    </script>
+    <!-- SCRIPT: Delay button presses END -->
 </head>
 
 <body>
@@ -129,8 +148,8 @@
                         </a>
                     </h2>-->
                     <h2>
-                        <a class="lkbtn" href="dwlARPCBS.html" target="_blank">
-                            Download Here!
+                        <a id="dwlAppBtn" class="lkbtn" href="dwlARPCBS.html" target="_blank" onclick="disableBtn()">
+                            Download ARPCBS Here!
                         </a>
                     </h2>
                     <br>
@@ -143,7 +162,7 @@
                         below:</p>
 
                     <p style="text-align: center;">
-                        <a href="dwlQRcode.html" target="_blank">
+                        <a id="dwlQRBtn" href="dwlQRcode.html" target="_blank" onclick="disableBtn()">
                             <img src="img/ps.png" style="width: 500px; height: 500px;" />
                         </a>
                     </p>
