@@ -11,7 +11,7 @@
     <script>
         function dwl() {
             document.getElementById("download").click();
-            closeWindow();
+            setTimeout(function () { closeWindow(); }, 5000)
         }
         function closeWindow() {
             window.close();
@@ -20,6 +20,6 @@
 </head>
 
 <body onload="dwl()">
-    <a id="download" href="ARPCBS.apk" download>Downloading now...</a>
+    <a id="download" href="ARPCBS.apk" download style="pointer-events: none;">Downloading now...</a>
 
 </body>
