@@ -52,31 +52,24 @@
     </script>
     <!-- SCRIPT: Side Navigation Bar END-->
 
-    <!-- SCRIPT: Countdown -->
+    <!-- SCRIPT: Delay button presses -->
     <script>
-        var countDownDate = new Date("April 15, 2019 23:00:00").getTime(); //DATE OF THE END
+        function disBtn() {
+            document.getElementById("dwlAppBtn").style.pointerEvents = "none";
+            document.getElementById("dwlQRBtn").style.pointerEvents = "none";
+        }
 
-        //UPDATER
-        var x = setInterval(function () {
+        function enaBtn() {
+            document.getElementById("dwlAppBtn").style.pointerEvents = "initial";
+            document.getElementById("dwlQRBtn").style.pointerEvents = "initial";
+        }
 
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("countdownTimer").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdownTimer").innerHTML = "THE END IS HERE"; //CHANGE TO REMOVE AND DISPLAY ANOTHER PAGE, CREATE IT
-            }
-        }, 1000);
+        function disableBtn() {
+            disBtn();
+            setTimeout(function () { enaBtn(); }, 10000);
+        }
     </script>
-    <!-- SCRIPT: Countdown END-->
+    <!-- SCRIPT: Delay button presses END -->
 
     <style>
         .jumboContainer {
@@ -136,13 +129,11 @@
 
         <div class="bodyContent">
             <div class="game1Container">
-                <div class="timerContainer">
-                    <h1>
-                        VERY DELAYED
-                        <div id="countdownTimer">
-                        </div>
-                    </h1>
-                </div>
+                <h2 style="text-align: center; padding-top: 200px; font-size: 75px; font-weight: bolder;">
+                    <a id="dwlAppBtn" class="lkbtn" href="dwlOCAL.html" target="_blank" onclick="disableBtn()" style="text-decoration: none; color: white;">
+                        Download OCAL Here!
+                    </a>
+                </h2>
             </div>
         </div>
         <!-- CONTENT/BODY -->
