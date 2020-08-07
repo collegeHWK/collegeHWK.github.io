@@ -617,6 +617,30 @@
 }
 /* Home Page END */
 
+/* Harraz Secret */
+.razContainer{
+    background-color: #000033;
+    height: auto;
+    color: white;
+    margin: 0px 25px;
+    border-radius: 40px;
+    padding: 10px 25px 20px;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+}
+
+.razSpacing{
+    padding-top: 1500px;
+}
+
+#flex1{
+    margin: 50px auto;
+    width: 50%;
+}
+
+/* Harraz Secret END */
+
 /* BODY CONTENT END */
 
 /* SECWWEEEET rooVV*/
