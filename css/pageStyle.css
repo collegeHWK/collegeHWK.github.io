@@ -634,9 +634,19 @@
     padding-top: 1500px;
 }
 
-#flex1{
+#flex1, #flex2{
     margin: 50px auto;
-    width: 50%;
+    width: 25%;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 /* Harraz Secret END */
